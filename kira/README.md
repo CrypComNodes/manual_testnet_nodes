@@ -20,13 +20,16 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io
 
 ```
 sudo useradd kira -m -s /bin/bash  
-sudo passwd kira  
+sudo passwd kira
+```
+```
 sudo usermod -aG sudo kira
 ```  
 
 ### 3.Установка ноды Kira  
 
-```sudo su - kira  
+```
+sudo su - kira  
 sudo -s
 ```  
 
