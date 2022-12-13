@@ -1,8 +1,8 @@
-#Kira network
+# Kira network
 
-##[Official site](https://kira.network)
+## [Official site](https://kira.network)
 
-###1. Установка зависимостей:
+### 1. Установка зависимостей:
 
 `sudo apt update && sudo apt -y upgrade  
 sudo apt install -y network-manager  
@@ -14,18 +14,18 @@ $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev
 sudo apt update  
 sudo apt install -y docker-ce docker-ce-cli containerd.io`  
 
-###2. Создание sudoer пользователя
+### 2. Создание sudoer пользователя
 
 `sudo useradd kira -m -s /bin/bash  
 sudo passwd kira  
 sudo usermod -aG sudo kira`  
 
-###3.Установка ноды Kira  
+### 3.Установка ноды Kira  
 
 `sudo su - kira  
 sudo -s`  
 
-####Запускаем скрипт установки  
+#### Запускаем скрипт установки  
 
 `cd /tmp && read -p "Input branch name: " BRANCH && \  
  wget https://raw.githubusercontent.com/KiraCore/kira/$BRANCH/workstation/init.sh -O ./i.sh && \  
