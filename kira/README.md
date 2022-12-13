@@ -1,6 +1,4 @@
-Official site: https://kira.network
-
-[Officeial site](https://kira.network)
+[Official site](https://kira.network)
 
 
 
