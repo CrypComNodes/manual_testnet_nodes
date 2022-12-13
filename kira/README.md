@@ -33,3 +33,5 @@ For remove user and f userfolder:
 
 `sudo deluser --remove-home kira`
 
+
+
