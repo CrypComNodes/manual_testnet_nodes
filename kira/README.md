@@ -26,6 +26,7 @@ sudo rm -rf /var/lib/docker /etc/docker
 sudo rm /etc/apparmor.d/docker
 sudo groupdel docker
 sudo rm -rf /var/run/docker.sock
+
 You have removed Docker from the system completely.
 
 For remove user and f userfolder:
