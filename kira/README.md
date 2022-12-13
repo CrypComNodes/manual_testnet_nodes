@@ -11,7 +11,7 @@ To completely uninstall Docker:
 
 Step 1
 
-dpkg -l | grep -i docker
+`dpkg -l | grep -i docker`
 
 To identify what installed package you have:
 
