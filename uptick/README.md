@@ -1,4 +1,3 @@
-readme
 # Uptick
 
 ## [Official website](https://www.uptick.network)
