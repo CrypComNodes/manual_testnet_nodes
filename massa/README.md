@@ -7,3 +7,5 @@
 Если команда rustup не обнаружена:
 
 In my case I needed to add export PATH="$HOME/.cargo/bin:$PATH" to my .bash_profile file instead of my .profile file.
+
+Устанавливал и настравивал по [инструкции](https://teletype.in/@letskynode/Massa#1qza)
