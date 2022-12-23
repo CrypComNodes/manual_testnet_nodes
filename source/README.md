@@ -16,5 +16,5 @@ sourced tx staking delegate sourcevaloper1aptxr5aure9q479wvefhh5hgarh3x32c4mchph
 ```
 Информация о валидаторе:
 ```
-sourced q staking validator $(sourced keys show source1aptxr5aure9q479wvefhh5hgarh3x32c497864 --bech val -a)
+sourced q staking validator $(sourced keys show $SOURCE_WALLET_ADDRESS --bech val -a)
 ```
