@@ -18,3 +18,4 @@ hdparm -t /dev/sda2
 ```
 sync; dd if=/dev/zero of=tempfile bs=1M count=1024; sync
 ```
+
