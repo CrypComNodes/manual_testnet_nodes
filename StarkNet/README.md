@@ -5,7 +5,7 @@
 Чтобы обезопасить себя от разрыва соединения между сервером и клиентом (mobaxterm, putty, etc...) рекомендую выполнять установку/обновление нод с использованием менеджера терминалов tmux. Tmux позволит выполнять команды "в окне", которое даст возможность сохранить выполнение процесса в случае разрыва соединения. [Команды по использованию tmux.](https://github.com/CrypComNods/manual_testnet_nodes/blob/main/tmux_commands.md)
 
 
-### Обновление StarkNet v0.4.3:
+### Обновление StarkNet v0.4.5:
 ```
 cd ~/pathfinder
 ```
@@ -16,7 +16,7 @@ rustup update
 git fetch
 ```
 ```
-git checkout v0.4.3
+git checkout v0.4.5
 ```
 ```
 cargo build --release --bin pathfinder
