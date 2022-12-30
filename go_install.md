@@ -1,5 +1,12 @@
 # Установка go v1.19.4
 
+Удаляем старую версию:
+```
+sudo apt-get remove golang-go -y
+sudo apt-get remove --auto-remove golang-go -y
+rm -rvf /usr/local/go/ -y
+```
+Устанавливаем новую версию:
 ```
 cd $HOME
 wget -O go1.19.4.linux-amd64.tar.gz https://golang.org/dl/go1.19.4.linux-amd64.tar.gz
