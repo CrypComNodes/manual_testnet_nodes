@@ -30,3 +30,10 @@ if ! [ -x "$(command -v go)" ]; then
   source ~/.bash_profile
 fi
 ```
+Добавляем go в переменную среды:
+```
+echo "export GOPATH=$HOME/go" >> ~/.profile
+echo "export PATH=$PATH:$GOPATH/bin" >> ~/.profile
+echo "export PATH=$PATH:$GOPATH/bin:/usr/local/go/bin" >> ~/.profile
+. ~/.profile
+```
