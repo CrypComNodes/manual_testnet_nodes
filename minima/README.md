@@ -58,14 +58,14 @@ su - minima
 ```
 docker run -d -e minima_mdspassword=123 -e minima_server=true -v ~/minimadocker9001:/home/minima/data -p 9001-9004:9001-9004 --restart unless-stopped --name minima9001 minimaglobal/minima:latest
 ```
--d: запуск демона, для работы в фоне
--e minima_mdspassword=123 : пароль для доступа к ноде, который будет использоваться в веб морде
--e minima_server=true : установить режим сервера для доступа входящих подключений
--v ~/minimadocker9001:/home/minima/data : создать локальную директорию с именем minimadocker9001 в вашей домашней директории /home/minima/data directory in Docker. The minimadocker9001 folder is where the Minima database and is also where your backups will be stored.
--p 9001-9004:9001-9004 : порты для ноды в контейнере
---restart unless-stopped : рестарт контенера, если упадёт
---name minima9001 : установка именип контейнера minima9001
-minimaglobal/minima:latest : specifies where to pull the Minima code from
+-d: запуск демона, для работы в фоне\
+-e minima_mdspassword=123 : пароль для доступа к ноде, который будет использоваться в веб морде\
+-e minima_server=true : установить режим сервера для доступа входящих подключений\
+-v ~/minimadocker9001:/home/minima/data : создать локальную директорию с именем minimadocker9001 в вашей домашней директории /home/minima/data directory in Docker. The minimadocker9001 folder is where the Minima database and is also where your backups will be stored.\
+-p 9001-9004:9001-9004 : порты для ноды в контейнере\
+--restart unless-stopped : рестарт контенера, если упадёт\
+--name minima9001 : установка именип контейнера minima9001\
+minimaglobal/minima:latest : specifies where to pull the Minima code from\
 
 Включаем автозапуск для докера:
 ```
