@@ -6,7 +6,25 @@
 
 ### Запуск ноды на сервере под управлением ubuntu:
 
-Добавляем ппользователя:
+Если на сервере есть старая верисия ноды - удаляем
+
+Проверить можно командой:
+```
+systemctl list-units --type=service
+```
+Запускаем скрипт для удаления ноды:
+```
+sudo wget -O minima_remove.sh https://raw.githubusercontent.com/minima-global/Minima/master/scripts/minima_remove.sh && sudo chmod +x minima_remove.sh && sudo ./minima_remove.sh -p 9001 -x
+```
+Удаляем все связанные папки:
+```
+sudo rm -r /home/minima/
+```
+Удаляем пользователя:
+```
+sudo userdel minima
+```
+Добавляем пользователя:
 ```
 sudo adduser minima
 ```
