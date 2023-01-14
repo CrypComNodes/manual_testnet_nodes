@@ -100,3 +100,12 @@ docker run -d -e minima_mdspassword=123 -e minima_server=true -v ~/minimadocker8
 ```
 status
 ```
+
+Для замены пароля ноды, нужно удалить контейнер и создать заново.
+Для удаления контейнера вводим команды:
+```
+docker stop minima9001
+```
+```
+docker rm minima9001
+```
